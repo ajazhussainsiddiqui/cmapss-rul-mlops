@@ -60,7 +60,7 @@
 **Dataset: FD001** (Engine units with 1 failure mode, 1 operating condition)
 | Model      | RMSE (all) | RMSE (last cycle) | NASA Score |
 |------------|------------|-------------------|------------|
-| Ridge      | 16.14       | 15.83              | 350.25     |
+| Ridge regression      | 16.14       | 15.83              | 350.25     |
 | XGBoost    | 15.64       | 15.05              | 343.86       |
 | LightGBM   | 15.70       | 14.79              | **317.28**   |
 ---
@@ -68,7 +68,7 @@
 **Dataset: FD002** (Engine units with 1 failure mode, 6 operating condition)  
 | Model      | RMSE (all) | RMSE (last cycle) | NASA Score |
 |------------|------------|-------------------|------------|
-| Ridge      | 18.45       | 17.18              | 1172.88     |
+| Ridge regression | 18.45       | 17.18              | 1172.88     |
 | XGBoost    | 17.64       | 15.63              | **986.37**       |
 | LightGBM   | 17.79       | 16.14              | 1132.95   |  
 ---
@@ -76,7 +76,7 @@
 **Dataset: FD003**  (Engine units with 2 failure mode, 1 operating condition) 
 | Model      | RMSE (all) | RMSE (last cycle) | NASA Score |
 |------------|------------|-------------------|------------|
-| Ridge      | 15.91       | 15.98             | 425.71   |
+| Ridge regression | 15.91       | 15.98             | 425.71   |
 | XGBoost    | 12.29       | 14.23             | **325.57**    |
 | LightGBM   | 12.01       | 14.39             | 335.36   |  
 ---
@@ -84,7 +84,7 @@
 **Dataset: FD004**  (Engine units with 2 failure mode, 6 operating condition)  
 | Model      | RMSE (all) | RMSE (last cycle) | NASA Score |
 |------------|------------|-------------------|------------|
-| Ridge      | 18.57       | 20.14              | 1822.89  |
+| Ridge regression | 18.57       | 20.14              | 1822.89  |
 | XGBoost    | 15.72       | 17.04              | 1550.47  |
 | LightGBM   | 15.93       | 17.30              | **1544.55**  |
 ---
