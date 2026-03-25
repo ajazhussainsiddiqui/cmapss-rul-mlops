@@ -9,6 +9,11 @@ venv/
 .env
 
 
+predictive_maintenance.egg-info/
+
+# artifacts
+evaluate/
+
 # MLflow & Experiment Tracking
 mlruns/
 mlflow.db
