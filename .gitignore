@@ -9,6 +9,15 @@ venv/
 .env
 
 
+predictive_maintenance.egg-info/
+
+# artifacts
+artifacts/FD001/train/
+artifacts/FD002/train/
+artifacts/FD003/train/
+artifacts/FD004/train/
+
+
 # MLflow & Experiment Tracking
 mlruns/
 mlflow.db

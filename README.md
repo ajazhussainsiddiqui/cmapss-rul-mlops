@@ -4,7 +4,7 @@
 
 
 [![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-API_Deployed-yellow)](https://huggingface.co/spaces/ajazhussainsiddiqui/predictive-maintenance-cmapss)
-[![Streamlit](https://img.shields.io/badge/🎈Streamlit-Frontend-red)](#)
+[![Streamlit](https://img.shields.io/badge/🎈Streamlit-Frontend-red)](https://jet-engine-rul.streamlit.app)
 ![Docker](https://img.shields.io/badge/Docker-containerized-blue)
 ![MLflow](https://img.shields.io/badge/MLflow-tracked-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
@@ -18,7 +18,8 @@
 
 
 
-> **Deployed**: [Streamlit Frontend](#) |  [FastAPI on Hugging Face]('https://ajazhussainsiddiqui-predictive-maintenance-cmapss.hf.space') | [API Docs]('https://ajazhussainsiddiqui-predictive-maintenance-cmapss.hf.space/docs')
+> **Deployed**   
+[**Streamlit Frontend**](https://jet-engine-rul.streamlit.app) | [**FastAPI on Hugging Face**](https://ajazhussainsiddiqui-predictive-maintenance-cmapss.hf.space) | [**API Docs**](https://ajazhussainsiddiqui-predictive-maintenance-cmapss.hf.space/docs)  
 
 ---
 
@@ -165,18 +166,19 @@ cd cmapss-rul-mlops
 
 #### 2. Data Preparation
 
-- Download the NASA CMAPSS Jet Engine Simulated Data (https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data).
+- Download the NASA CMAPSS Jet Engine Simulated Data (https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data) or 
+  use it from data/raw/CMAPSS folder.
 - Place the .txt files into data/raw/CMAPSSData/.
 
 #### 3. Install dependencies
-```
+```bash
 pip install -r requirements.txt
 ```
 
 
 #### 4. Model Training Pipeline
 
-```
+```bash
 # Generate features
 python src/feature_engineering.py
 
@@ -201,11 +203,11 @@ training:
 ### Launch app
 #### 1. Launch API Server
 
-```
+```bash
 uvicorn app.main:app 
 ```
 #### 2. Launch Streamlit Dashboard
-```
+```bash
 cd frontend
 streamlit run streamlit_app.py
 ```
@@ -217,7 +219,7 @@ You can easily launch the FastAPI backend using Docker Compose, which automatica
 ```bash
 docker-compose up --build
 ```
-The API will be available at http://localhost:8000.
+The API will be available at `http://localhost:8000`.
 
 
 
