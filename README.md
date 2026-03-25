@@ -19,7 +19,7 @@
 
 
 > **Deployed**   
-[Streamlit Frontend](https://jet-engine-rul.streamlit.app) | [FastAPI on Hugging Face](https://ajazhussainsiddiqui-predictive-maintenance-cmapss.hf.space) | [API Docs](https://ajazhussainsiddiqui-predictive-maintenance-cmapss.hf.space/docs)  
+[**Streamlit Frontend**](https://jet-engine-rul.streamlit.app) | [**FastAPI on Hugging Face**](https://ajazhussainsiddiqui-predictive-maintenance-cmapss.hf.space) | [**API Docs**](https://ajazhussainsiddiqui-predictive-maintenance-cmapss.hf.space/docs)  
 
 ---
 
