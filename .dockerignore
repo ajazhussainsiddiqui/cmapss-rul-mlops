@@ -1,0 +1,35 @@
+# Git
+.git
+.gitignore
+
+# Python caching and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Jupyter Notebooks 
+notebooks/
+*.ipynb
+.ipynb_checkpoints/
+
+# MLflow Tracking & Artifacts
+mlruns/
+mlflow.db
+artifacts/
+
+# Local Data (Raw and Processed)
+data/
+
+# Logs
+pipeline_execution.log
+*.log
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

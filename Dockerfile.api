@@ -1,0 +1,26 @@
+
+# Use official Python slim image
+FROM python:3.11-slim
+
+# Set working directory inside container
+WORKDIR /
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    g++ \
+    libomp-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first to leverage Docker cache
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose port 8000 for local and 7860 for Hugging Face Spaces
+EXPOSE 8000
+
+# Command to run the API with Uvicorn on port 7860
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]

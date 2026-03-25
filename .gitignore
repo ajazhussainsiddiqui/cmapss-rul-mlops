@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+
+# MLflow & Experiment Tracking
+mlruns/
+mlflow.db
+
+
+# Logs
+*.log
+pipeline_execution.log
+
+# data
+data/processed/
+
+
+# OS & IDE Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
